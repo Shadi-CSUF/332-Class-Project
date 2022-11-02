@@ -1,0 +1,11 @@
+{
+    "name": "CSUF Server",
+    "host": "shell.ecs.fullerton.edu",
+    "protocol": "sftp",
+    "port": 22,
+    "username": "cs332f??",
+    "password": "????????",
+    "remotePath": "/home/titan0/cs332f/cs332f??/",
+    "uploadOnSave": true,
+    "ignore": [".vscode", ".git"]
+}
