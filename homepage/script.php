@@ -2,18 +2,19 @@
     include './helpers/dotenv.php';
     (new DotEnv(__DIR__ . '/../.env'))->load();
 
-    $servername = "localhost:3306";
+    $servername = "mariadb";
     $username = getenv('DB_USERNAME');
     $password = getenv('DB_PASSWORD');
     $dbname = getenv('DB_NAME');
 
-    print $username;
-
     // Create connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
+    }
+    else {
+        echo "Successful connection!";
     }
 
     $sql = "SELECT id, firstname, lastname FROM MyGuests";
