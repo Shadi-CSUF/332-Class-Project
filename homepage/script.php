@@ -1,5 +1,6 @@
 <?php
     include './helpers/dotenv.php';
+    include './schema.php';
     (new DotEnv(__DIR__ . '/../.env'))->load();
 
     $servername = "mariadb";
@@ -15,6 +16,8 @@
     }
     else {
         echo "Successful connection!";
+        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+        initializeDB($conn, $dbname);
     }
 
     $conn->close();
