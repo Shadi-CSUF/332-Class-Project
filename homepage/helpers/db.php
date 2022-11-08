@@ -16,8 +16,8 @@
         $conn->query("USE " . $dbname);
 
         // Load all queries from file
-        $sql = file_get_contents(__DIR__ .'/../sql/schema.sql');
-        if (!$conn->multi_query($sql)) {
+        $sql = file_get_contents(__DIR__ .'/../../sql/tables.sql');
+        if (!$conn->multi_query($sql)) { 
             echo("Error: " . $conn->error);
         }
     }
