@@ -1,6 +1,6 @@
 <?php
     include './helpers/dotenv.php';
-    include './schema.php';
+    include './helpers/db.php';
     (new DotEnv(__DIR__ . '/../.env'))->load();
 
     $servername = "mariadb";
