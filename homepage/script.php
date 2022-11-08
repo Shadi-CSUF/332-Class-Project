@@ -1,7 +1,5 @@
 <?php
-    include './helpers/dotenv.php';
     include './helpers/db.php';
-    (new DotEnv(__DIR__ . '/../.env'))->load();
 
     $servername = "mariadb";
     $username = getenv('DB_USERNAME');
