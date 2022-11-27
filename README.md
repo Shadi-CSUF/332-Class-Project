@@ -42,3 +42,11 @@ You might run into an error like such:
 [warn] ENOENT: no such file or directory, open 'C:\Users\USER\.ssh\config' load C:\Users\USER\.ssh\config failed
 ```
 To fix, just create the missing folder and file (the file can just be empty, it just needs to exist)
+
+1. cover page with names last 4 digit cwid (upload project implementation)
+2. ER diagram of design (hw#1)
+3. relational model with primary/foreign keys (similar to hw #2)
+4.  Source code including DDL that was used to create tables and the SQL implement queries as well as PHP scripts used for implementing user interface
+5. screenshots of the interfaces you developed
+6. screenshots of sample runs of the system, including inputs and outputs
+project uploaded in one of the accounts on the department server
