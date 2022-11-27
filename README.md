@@ -5,7 +5,7 @@ See [RUBRIC.md](RUBRIC.md) for full requirements and details.
 
 ## Group Members
 - Jimmy Quach
-- .
+- Paul Kennedy
 - .
 
 ## Development
