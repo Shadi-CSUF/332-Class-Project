@@ -1,4 +1,5 @@
 <?php
+    // include './components/login.php';
     include './helpers/db.php';
 
     $servername = "mariadb";
