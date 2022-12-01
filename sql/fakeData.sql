@@ -44,3 +44,53 @@ INSERT INTO Students VALUES (56781234,"Kenneth Alvarado","4765 John Calvin Drive
 INSERT INTO Students VALUES (67812345,"Donna Blanton","1025 Bungalow Road","4029321348","F");
 INSERT INTO Students VALUES (78123456,"Dorothy Sproul","1153 Maxwell Farm Road","5402367982","F");
 INSERT INTO Students VALUES (81234567,"Jessica Phelps","615 Willow Oaks Lane","3373320623","F");
+
+-- Minimum of 2 departments according to rubric
+INSERT INTO Departments
+VALUES (
+    "Computer Science Department",
+    "1234567890",
+    "CS 522",
+    123456789
+); 
+
+INSERT INTO Departments
+VALUES (
+    "Mathematics Department",
+    "1234567890",
+    "MH 154",
+    234567891
+); 
+
+-- Minimum of 4 courses according to rubric
+INSERT INTO Courses
+VALUES (
+    1234, 
+    "File Structure & Database", 
+    "Fundamentals of Database Systems, Ramez Elmasri & Shamkant B. Navathe, Seventh Edition",
+    3
+); 
+
+INSERT INTO Courses
+VALUES (
+    2341, 
+    "Algorithm Engineering", 
+    "Algorithm Design in Three Acts, Kevin Wortman, Beta Edition",
+    3
+); 
+
+INSERT INTO Courses
+VALUES (
+    3412, 
+    "Professional Ethics in Computing", 
+    "Ethics for the Information Age, Michael J. Quinn, 8th Edition",
+    3
+); 
+
+INSERT INTO Courses
+VALUES (
+    4123,
+    "Statistics Applied to Natural Science", 
+    "OpenIntro Statistics (OS), David Diez, Mine Çetinkaya-Rundel & Christopher Barr, Fourth Edition",
+    3
+); 
