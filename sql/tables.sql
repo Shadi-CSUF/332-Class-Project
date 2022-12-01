@@ -11,7 +11,7 @@ CREATE TABLE Professors (
 
 CREATE TABLE Departments (
     Name VARCHAR(255) PRIMARY KEY,
-    Telephone VARCHAR(10),
+    Telephone VARCHAR(11),
     Location VARCHAR(255),
     ChairpersonSsn INT,
     FOREIGN KEY (ChairpersonSsn) references Professors(Ssn)
@@ -38,7 +38,7 @@ CREATE TABLE Students (
     CampusId INT PRIMARY KEY,
     Name VARCHAR(255),
     Address VARCHAR(255),
-    Telephone VARCHAR(10),
+    Telephone VARCHAR(11),
     Sex ENUM('M', 'F')
 );
 
