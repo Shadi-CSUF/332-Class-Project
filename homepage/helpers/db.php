@@ -15,10 +15,26 @@
         $conn->query("CREATE DATABASE " . $dbname);
         $conn->query("USE " . $dbname);
 
-        // Load all queries from file
+        // Build tables using queries from tables.sql
         $sql = file_get_contents(__DIR__ .'/../../sql/tables.sql');
         if (!$conn->multi_query($sql)) { 
             echo("Error: " . $conn->error);
         }
+        clearStoredResults($conn);
+
+        // Insert data into tables using queries from fakeData.sql
+        $sql = file_get_contents(__DIR__ .'/../../sql/fakeData.sql');
+        if (!$conn->multi_query($sql)) { 
+            echo("Error: " . $conn->error);
+        }
+        clearStoredResults($conn);
+    }
+
+    function clearStoredResults($conn) {
+        do {
+             if ($res = $conn->store_result()) {
+               $res->free();
+             }
+        } while ($conn->more_results() && $conn->next_result());        
     }
 ?>
