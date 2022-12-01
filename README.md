@@ -42,3 +42,9 @@ You might run into an error like such:
 [warn] ENOENT: no such file or directory, open 'C:\Users\USER\.ssh\config' load C:\Users\USER\.ssh\config failed
 ```
 To fix, just create the missing folder and file (the file can just be empty, it just needs to exist)
+
+You might need to sync local -> remote for the first time:
+1. Ctrl+Shift+P on Windows/Linux or Cmd+Shift+P on Mac open command palette.
+2. Type sftp and you'll now see a number of other commands. Select SFTP:Sync Local -> Remote
+
+To learn more, check out the extension's [wiki](https://github.com/Natizyskunk/vscode-sftp/wiki).
