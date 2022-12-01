@@ -6,11 +6,11 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Professor View <span class="sr-only">(current)</span></a>
+      <li id="pView" class="nav-item active">
+        <a class="nav-link" href="javascript:;" onclick="openProfessorView()">Professor View</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Student View</a>
+      <li id="sView" class="nav-item">
+        <a class="nav-link" href="javascript:;" onclick="openStudentView()">Student View</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -18,3 +18,25 @@
     </form>
   </div>
 </nav>
+
+<script>
+  function openProfessorView() {
+    document.getElementById("pView").classList.add('active');
+    document.getElementById("sView").classList.remove('active');
+
+    document.getElementById("professor").classList.add('show');
+    document.getElementById("professor").classList.add('active');
+    document.getElementById("student").classList.remove('show');
+    document.getElementById("student").classList.remove('active');
+  }
+
+  function openStudentView() {
+    document.getElementById("sView").classList.add('active');
+    document.getElementById("pView").classList.remove('active');
+
+    document.getElementById("student").classList.add('show');
+    document.getElementById("student").classList.add('active');
+    document.getElementById("professor").classList.remove('show');
+    document.getElementById("professor").classList.remove('active');
+  }
+</script>

@@ -16,5 +16,14 @@
         include "./components/navbar.php";
         include 'app.php';
     ?>
+
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="professor" role="tabpanel">
+            <?php include './components/professor.php'; ?>
+        </div>
+        <div class="tab-pane fade" id="student" role="tabpanel">
+            <?php include './components/student.php'; ?>
+        </div>
+    </div>
 </body>
 </html>
