@@ -14,7 +14,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
     else {
-        echo "Successful connection!";
+        // echo "Successful connection!";
         mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
         initializeDB($conn, $dbname);
     }

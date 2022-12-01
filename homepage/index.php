@@ -17,8 +17,11 @@
         include 'app.php';
     ?>
 
-    <div class="tab-content">
-        <div class="tab-pane fade show active" id="professor" role="tabpanel">
+    <div class="tab-content p-4">
+        <div class="tab-pane fade show active" id="admin" role="tabpanel">
+            <?php include './components/admin.php'; ?>
+        </div>
+        <div class="tab-pane fade" id="professor" role="tabpanel">
             <?php include './components/professor.php'; ?>
         </div>
         <div class="tab-pane fade" id="student" role="tabpanel">
