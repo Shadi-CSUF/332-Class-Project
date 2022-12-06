@@ -77,7 +77,7 @@
         <!-- Content wrapper -->
         <div class="content-wrapper">
           <!-- Content -->
-          <div class="container-xxl flex-grow-1 container-p-y">
+          <div class="container-xxl flex-grow-1 container-p-y tab-content">
             <div class="tab-pane fade show active" id="admin" role="tabpanel">
               <?php include './components/admin.php'; ?>
             </div>
