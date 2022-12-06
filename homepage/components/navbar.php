@@ -1,23 +1,23 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">University Database System</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li id="aView" class="nav-item active">
-        <a class="nav-link" href="javascript:;" onclick="openAdminView()">Admin View</a>
-      </li>
-      <li id="pView" class="nav-item">
-        <a class="nav-link" href="javascript:;" onclick="openProfessorView()">Professor View</a>
-      </li>
-      <li id="sView" class="nav-item">
-        <a class="nav-link" href="javascript:;" onclick="openStudentView()">Student View</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<!-- Dashboard -->
+<li id="aView" class="menu-item active">
+  <a href="javascript:;" onclick="openAdminView()" class="menu-link">
+    <i class="menu-icon tf-icons bx bx-home-circle"></i>
+    <div data-i18n="Analytics">Admin Dashboard</div>
+  </a>
+</li>
+<!-- Layouts -->
+<li id="pView" class="menu-item">
+  <a href="javascript:;" onclick="openProfessorView()" class="menu-link">
+    <i class="menu-icon tf-icons bx bx-collection"></i>
+    <div data-i18n="Basic">Students</div>
+  </a>
+</li>
+<li id="sView" class="menu-item">
+  <a href="javascript:;" onclick="openStudentView()" class="menu-link">
+    <i class="menu-icon tf-icons bx bx-collection"></i>
+    <div data-i18n="Basic">Professors</div>
+  </a>
+</li>
 
 <script>
   function openAdminView() {
