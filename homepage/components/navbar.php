@@ -7,15 +7,15 @@
 </li>
 <!-- Layouts -->
 <li id="pView" class="menu-item">
-  <a href="javascript:;" onclick="openProfessorView()" class="menu-link">
+  <a href="javascript:;" onclick="openStudentView()" class="menu-link">
     <i class="menu-icon tf-icons bx bx-collection"></i>
-    <div data-i18n="Basic">Students</div>
+    <div data-i18n="Basic">Students View</div>
   </a>
 </li>
 <li id="sView" class="menu-item">
-  <a href="javascript:;" onclick="openStudentView()" class="menu-link">
+  <a href="javascript:;" onclick="openProfessorView()" class="menu-link">
     <i class="menu-icon tf-icons bx bx-collection"></i>
-    <div data-i18n="Basic">Professors</div>
+    <div data-i18n="Basic">Professors View</div>
   </a>
 </li>
 
