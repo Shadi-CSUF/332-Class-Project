@@ -187,3 +187,34 @@
     </div>
   </div>
 </div>
+<div class="row py-4">
+  <div class="card">
+    <h5 class="card-header">Enrollments Table</h5>
+    <div class="table-responsive text-nowrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>STUDENTID</th>
+            <th>SECTIONID</th>
+            <th>GRADE</th>
+          </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+          <?php 
+            $SQL = "select * from Enrollments";
+            $result = $conn->query($SQL);
+            while (($row = $result->fetch_assoc()) == TRUE) { 
+          ?>
+            <tr>
+              <th><strong><?php echo $row["StudentId"]; ?></strong></th>
+              <td><?php echo $row["SectionId"]; ?></td>
+              <td><?php echo $row["Grade"]; ?></td>
+            </tr>
+          <?php 
+            } 
+          ?>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
