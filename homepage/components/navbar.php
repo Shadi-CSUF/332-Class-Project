@@ -6,13 +6,13 @@
   </a>
 </li>
 <!-- Layouts -->
-<li id="pView" class="menu-item">
+<li id="sView" class="menu-item">
   <a href="javascript:;" onclick="openStudentView()" class="menu-link">
     <i class="menu-icon tf-icons bx bx-collection"></i>
     <div data-i18n="Basic">Students View</div>
   </a>
 </li>
-<li id="sView" class="menu-item">
+<li id="pView" class="menu-item">
   <a href="javascript:;" onclick="openProfessorView()" class="menu-link">
     <i class="menu-icon tf-icons bx bx-collection"></i>
     <div data-i18n="Basic">Professors View</div>
