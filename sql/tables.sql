@@ -18,24 +18,28 @@ CREATE TABLE Departments (
 );
 
 CREATE TABLE Courses (
-    CourseId INT PRIMARY KEY,
+    Id INT PRIMARY KEY,
     Title VARCHAR(255),
     Textbook VARCHAR(255),
-    Units INT
+    Units INT,
+    PreReqs VARCHAR(255)
 );
 
 CREATE TABLE Sections (
-    SectionId INT PRIMARY KEY,
+    Id INT PRIMARY KEY,
+    CourseId INT,
     Classroom VARCHAR(255),
     NoOfSeats INT,
+    MeetingDays VARCHAR(255), 
     StartTime TIME,
     EndTime TIME,
     ProfessorSsn INT,
+    FOREIGN KEY (CourseId) references Courses(Id),
     FOREIGN KEY (ProfessorSsn) references Professors(Ssn)
 );
 
 CREATE TABLE Students (
-    CampusId INT PRIMARY KEY,
+    Id INT PRIMARY KEY,
     Name VARCHAR(255),
     Address VARCHAR(255),
     Telephone VARCHAR(10),
@@ -46,7 +50,7 @@ CREATE TABLE Enrollments (
     StudentId INT,
     SectionId INT,
     Grade ENUM('A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F'),
-    FOREIGN KEY (StudentId) references Students(CampusId),
-    FOREIGN KEY (SectionId) references Sections(SectionId),
+    FOREIGN KEY (StudentId) references Students(Id),
+    FOREIGN KEY (SectionId) references Sections(Id),
     PRIMARY KEY (StudentId, SectionId)
 );

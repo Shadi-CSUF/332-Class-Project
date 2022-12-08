@@ -68,7 +68,8 @@ VALUES (
     1234, 
     "File Structure & Database", 
     "Fundamentals of Database Systems, Ramez Elmasri & Shamkant B. Navathe, Seventh Edition",
-    3
+    3,
+    "CPSC 131"
 ); 
 
 INSERT INTO Courses
@@ -76,7 +77,8 @@ VALUES (
     2341, 
     "Algorithm Engineering", 
     "Algorithm Design in Three Acts, Kevin Wortman, Beta Edition",
-    3
+    3,
+    "MATH 270B&CPSC 131"
 ); 
 
 INSERT INTO Courses
@@ -84,7 +86,8 @@ VALUES (
     3412, 
     "Professional Ethics in Computing", 
     "Ethics for the Information Age, Michael J. Quinn, 8th Edition",
-    3
+    3,
+    "CPSC 311"
 ); 
 
 INSERT INTO Courses
@@ -92,5 +95,14 @@ VALUES (
     4123,
     "Statistics Applied to Natural Science", 
     "OpenIntro Statistics (OS), David Diez, Mine Çetinkaya-Rundel & Christopher Barr, Fourth Edition",
-    3
+    3,
+    "MATH 130|MATH 150B"
 ); 
+
+-- Minimum of 6 sections according to rubric
+INSERT INTO Sections VALUES (123456,1234,"CS 123",30,'MW','8:30','9:45',123456789); 
+INSERT INTO Sections VALUES (234561,2341,"CS 124",30,'MW','10:00','11:15',123456789); 
+INSERT INTO Sections VALUES (345612,2341,"CS 201",30,'TuTh','8:30','9:45',234567891); 
+INSERT INTO Sections VALUES (456123,3412,"CS 224",30,'TuTh','10:00','11:15',234567891); 
+INSERT INTO Sections VALUES (561234,4123,"MH 112",30,'F','19:00','21:45',345678912); 
+INSERT INTO Sections VALUES (612345,1234,"CS 101",30,'S','9:00','11:45',345678912);
