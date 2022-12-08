@@ -5,11 +5,11 @@
   <title>CPSC Database Project</title>
   <meta name="description" content="">
   <!-- Icons. Uncomment required icon fonts -->
-  <link rel="stylesheet" href="./css/boxicons.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Shadi-CSUF/335-CDN/main/CDN/boxicons.css">
   <!-- Core CSS -->
-  <link rel="stylesheet" href="./css/core.css" class="template-customizer-core-css">
-  <link rel="stylesheet" href="./css/theme-default.css" class="template-customizer-theme-css">
-  <link rel="stylesheet" href="./css/demo.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Shadi-CSUF/335-CDN/main/CDN/core.css" class="template-customizer-core-css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Shadi-CSUF/335-CDN/main/CDN/theme-default.css" class="template-customizer-theme-css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/Shadi-CSUF/335-CDN/main/CDN/demo.css">
 </head>
 <body>
   <!-- php initialization -->
@@ -103,6 +103,6 @@
   <!-- / Layout wrapper -->
   <!-- Core JS -->
   <!-- build:js assets/vendor/js/core.js -->
-  <script src="./css/bootstrap.js"></script>
+  <script src="https://raw.githubusercontent.com/Shadi-CSUF/335-CDN/main/CDN/bootstrap.js"></script>
 </body>
 </html>
