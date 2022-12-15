@@ -43,7 +43,16 @@ CREATE TABLE Students (
     Name VARCHAR(255),
     Address VARCHAR(255),
     Telephone VARCHAR(10),
-    Sex ENUM('M', 'F')
+    Sex ENUM('M', 'F'),
+    StudentMajor VARCHAR(255),
+    FOREIGN KEY (StudentMajor) references Departments(Name)
+);
+
+CREATE TABLE StudentMinors (
+    StudentId INT,
+    Minor VARCHAR(255),
+    FOREIGN KEY (Minor) references Department(Name),
+    PRIMARY KEY (StudentId, Minor)
 );
 
 CREATE TABLE Enrollments (

@@ -35,16 +35,6 @@ VALUES (
     "PhD in Computer Science,BS in Computer Science"
 ); 
 
--- Minimum of 8 students according to rubric
-INSERT INTO Students VALUES (12345678,"Leila Hornsby","2136 Davis Street","7063024012","F");
-INSERT INTO Students VALUES (23456781,"John Stalnaker","770 Washington Avenue","6019224616","M");
-INSERT INTO Students VALUES (34567812,"Michael Spencer","778 Airplane Avenue","8608850065","M");
-INSERT INTO Students VALUES (45678123,"Ernest Link","961 Coleman Avenue","7607824308","M");
-INSERT INTO Students VALUES (56781234,"Kenneth Alvarado","4765 John Calvin Drive","7088497178","M");
-INSERT INTO Students VALUES (67812345,"Donna Blanton","1025 Bungalow Road","4029321348","F");
-INSERT INTO Students VALUES (78123456,"Dorothy Sproul","1153 Maxwell Farm Road","5402367982","F");
-INSERT INTO Students VALUES (81234567,"Jessica Phelps","615 Willow Oaks Lane","3373320623","F");
-
 -- Minimum of 2 departments according to rubric
 INSERT INTO Departments
 VALUES (
@@ -61,6 +51,16 @@ VALUES (
     "MH 154",
     234567891
 ); 
+
+-- Minimum of 8 students according to rubric
+INSERT INTO Students VALUES (12345678,"Leila Hornsby","2136 Davis Street","7063024012","F","Computer Science Department");
+INSERT INTO Students VALUES (23456781,"John Stalnaker","770 Washington Avenue","6019224616","M","Computer Science Department");
+INSERT INTO Students VALUES (34567812,"Michael Spencer","778 Airplane Avenue","8608850065","M","Computer Science Department");
+INSERT INTO Students VALUES (45678123,"Ernest Link","961 Coleman Avenue","7607824308","M","Computer Science Department");
+INSERT INTO Students VALUES (56781234,"Kenneth Alvarado","4765 John Calvin Drive","7088497178","M","Computer Science Department");
+INSERT INTO Students VALUES (67812345,"Donna Blanton","1025 Bungalow Road","4029321348","F","Computer Science Department");
+INSERT INTO Students VALUES (78123456,"Dorothy Sproul","1153 Maxwell Farm Road","5402367982","F","Computer Science Department");
+INSERT INTO Students VALUES (81234567,"Jessica Phelps","615 Willow Oaks Lane","3373320623","F","Computer Science Department");
 
 -- Minimum of 4 courses according to rubric
 INSERT INTO Courses
