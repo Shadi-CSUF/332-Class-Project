@@ -128,7 +128,7 @@
                         "</tr>" +
                       "</thead>" +
                       "<tbody class='table-border-bottom-0'>" +
-                        rows
+                        rows +
                       "</tbody>" +
                     "</table>" +
                   "</div>"
@@ -203,7 +203,7 @@
                         "</tr>" +
                       "</thead>" +
                       "<tbody class='table-border-bottom-0'>" +
-                        rows
+                        rows +
                       "</tbody>" +
                     "</table>" +
                   "</div>"
