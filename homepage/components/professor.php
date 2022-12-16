@@ -63,7 +63,7 @@
     ?>
     <!-- Given the social security number of a professor, 
     list the titles, classrooms, meeting days and time of his/her classes. -->
-    <div class="row py-4">
+    <div class="row">
       <div class="card">
         <h5 class="card-header">List Sections by Professor SSN</h5>
         <div class="card-body px-4">
@@ -144,7 +144,7 @@
     </div>
     <!-- Given a course number and a section number, 
     count how many students get each distinct grade, i.e. ‘A’, ‘A-’, ‘B+’, ‘B’, ‘B-’, etc. -->
-    <div class="row">
+    <div class="row py-4">
       <div class="card">
         <h5 class="card-header">Count Distinct Grades</h5>
         <div class="card-body px-4">
