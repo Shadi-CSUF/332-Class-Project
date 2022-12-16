@@ -51,7 +51,7 @@ CREATE TABLE Students (
 CREATE TABLE StudentMinors (
     StudentId INT,
     Minor VARCHAR(255),
-    FOREIGN KEY (Minor) references Department(Name),
+    FOREIGN KEY (Minor) references Departments(Name),
     PRIMARY KEY (StudentId, Minor)
 );
 
