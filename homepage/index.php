@@ -4,12 +4,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
   <title>CPSC Database Project</title>
   <meta name="description" content="">
-  <!-- Icons. Uncomment required icon fonts -->
-  <link rel="stylesheet" href="./css/boxicons.css">
   <!-- Core CSS -->
   <link rel="stylesheet" href="./css/core.css" class="template-customizer-core-css">
   <link rel="stylesheet" href="./css/theme-default.css" class="template-customizer-theme-css">
   <link rel="stylesheet" href="./css/demo.css">
+  <style>
+    .horizontal-nav {
+      display: flex;
+      align-items: stretch; /* Default */
+      justify-content: space-between;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .horizontal-nav > li {
+      padding: 10px;
+      margin: 10px;
+      display: block;
+      flex: 0 1 auto; /* Default */
+      list-style-type: none;
+      background: #fafafa;
+    }
+  </style>
 </head>
 <body>
   <!-- php initialization -->
@@ -26,11 +42,8 @@
       <!-- Menu -->
       <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme" data-bg-class="bg-menu-theme">
         <div class="app-brand demo">
-          <a href="index.html" class="app-brand-link">
+          <a href="index.php" class="app-brand-link">
             <span class="app-brand-text demo menu-text fw-bolder ms-2">CONSOLE 332</span>
-          </a>
-          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-xl-none">
-            <i class="bx bx-chevron-left bx-sm align-middle"></i>
           </a>
         </div>
         <div class="menu-inner-shadow"></div>
@@ -51,30 +64,11 @@
       <!-- Layout container -->
       <div class="layout-page">
         <!-- Navbar -->
-        <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
-          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg>
-            </a>
-          </div>
-          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
-            <!-- Search -->
-            <div class="navbar-nav align-items-center">
-              <div class="nav-item d-flex align-items-center">
-                <i class="bx bx-search fs-4 lh-0"></i>
-                <input type="text" class="form-control border-0 shadow-none" placeholder="Search..." aria-label="Search...">
-              </div>
-            </div>
-            <!-- /Search -->
-            <ul class="navbar-nav flex-row align-items-center ms-auto">
-              <!-- Place this tag where you want the button to render. -->
-              <!-- User -->
-              <!--/ User -->
-            </ul>
-          </div>
-        </nav>
+        <div class="bg-menu-theme layout-menu-toggle navbar-nav align-items-xl-center d-xl-none">
+          <ul class="horizontal-nav menu-inner py-1 ps">
+            <?php include "./components/navbar.php"; ?>
+          </ul>
+        </div>
         <!-- / Navbar -->
         <!-- Content wrapper -->
         <div class="content-wrapper">

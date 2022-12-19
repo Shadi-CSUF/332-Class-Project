@@ -29,9 +29,15 @@
 
 <script>
   function openAdminView() {
-    document.getElementById("aView").classList.add('active');
-    document.getElementById("pView").classList.remove('active');
-    document.getElementById("sView").classList.remove('active');
+    document.querySelectorAll('[id=aView]').forEach((i) => {
+      i.classList.add('active');
+    });
+    document.querySelectorAll('[id=pView]').forEach((i) => {
+      i.classList.remove('active');
+    });
+    document.querySelectorAll('[id=sView]').forEach((i) => {
+      i.classList.remove('active');
+    });
 
     document.getElementById("admin").classList.add('show', 'active');
     document.getElementById("professor").classList.remove('show', 'active');
@@ -39,9 +45,15 @@
   }
 
   function openProfessorView() {
-    document.getElementById("aView").classList.remove('active');
-    document.getElementById("pView").classList.add('active');
-    document.getElementById("sView").classList.remove('active');
+    document.querySelectorAll('[id=aView]').forEach((i) => {
+      i.classList.remove('active');
+    });
+    document.querySelectorAll('[id=pView]').forEach((i) => {
+      i.classList.add('active');
+    });
+    document.querySelectorAll('[id=sView]').forEach((i) => {
+      i.classList.remove('active');
+    });
 
     document.getElementById("admin").classList.remove('show', 'active');
     document.getElementById("professor").classList.add('show', 'active');
@@ -49,9 +61,15 @@
   }
 
   function openStudentView() {
-    document.getElementById("aView").classList.remove('active');
-    document.getElementById("pView").classList.remove('active');
-    document.getElementById("sView").classList.add('active');
+    document.querySelectorAll('[id=aView]').forEach((i) => {
+      i.classList.remove('active');
+    });
+    document.querySelectorAll('[id=pView]').forEach((i) => {
+      i.classList.remove('active');
+    });
+    document.querySelectorAll('[id=sView]').forEach((i) => {
+      i.classList.add('active');
+    });
 
     document.getElementById("admin").classList.remove('show', 'active');
     document.getElementById("professor").classList.remove('show', 'active');
