@@ -81,7 +81,7 @@
             <button class="btn btn-outline-secondary" type="button" onclick="listSectionsByCourseId()">Query</button>
           </div>
         </div>
-        <div id="sectionsList" class="table-responsive text-nowrap mb-4">
+        <div id="student-sectionsList" class="table-responsive text-nowrap mb-4">
         </div>
         <script>
           function listSectionsByCourseId() {
@@ -114,7 +114,7 @@
                         "</tr>";
               });
               if(data.length != 0) {
-                document.getElementById("sectionsList").innerHTML =
+                document.getElementById("student-sectionsList").innerHTML =
                   "<div class='table-responsive text-nowrap'>" +
                     "<table class='table'>" +
                       "<thead>" +
@@ -135,7 +135,7 @@
                 ;
               }
               else{
-                document.getElementById("sectionsList").innerHTML = "No results.";
+                document.getElementById("student-sectionsList").innerHTML = "No results.";
               }
             })
           }
